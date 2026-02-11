@@ -11,9 +11,9 @@ export function GlassCard({ children, className, ...props }: GlassCardProps) {
         <div
             className={cn(
                 "relative backdrop-blur-[20px] backdrop-saturate-[180%] rounded-[20px] overflow-hidden",
-                "bg-white/60 dark:bg-gray-800/60", // Reverted to neutral glass colors
+                "bg-white/60 dark:bg-gray-800/40", // Lower opacity in dark mode for better blend
                 "shadow-[0_4px_30px_rgba(0,0,0,0.05)]", // Softer shadow for light theme
-                "border border-white/50 dark:border-gray-700/50", // Standard theme borders with transparency
+                "border border-white/50 dark:border-gray-700/30", // Thinner border in dark mode
                 className
             )}
             style={{

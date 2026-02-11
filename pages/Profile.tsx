@@ -38,7 +38,7 @@ const Profile = () => {
 
             {/* Left Column: Profile Card */}
             <div className="space-y-6">
-               <GlassCard className="flex flex-col items-center text-center relative overflow-hidden">
+               <GlassCard className="flex flex-col items-center text-center relative overflow-hidden pb-6">
                   <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-r from-[#FF6B6B] to-[#FF8E53]"></div>
 
                   <div className="relative mt-8 mb-4">
@@ -78,7 +78,7 @@ const Profile = () => {
                   </div>
                </GlassCard>
 
-               <GlassCard>
+               <GlassCard className="p-6">
                   <h3 className="font-bold text-gray-800 dark:text-white mb-4 text-sm uppercase tracking-wider">Contact Info</h3>
                   <div className="space-y-4">
                      <div className="flex items-center gap-3 text-sm">
@@ -108,7 +108,7 @@ const Profile = () => {
 
             {/* Right Column: Details & Settings */}
             <div className="lg:col-span-2 space-y-6">
-               <GlassCard className="min-h-[600px] flex flex-col">
+               <GlassCard className="min-h-[600px] flex flex-col p-8">
                   {/* Tabs */}
                   <div className="flex gap-1 p-1 bg-gray-50/50 dark:bg-gray-700/50 rounded-xl mb-8 w-fit">
                      <button
